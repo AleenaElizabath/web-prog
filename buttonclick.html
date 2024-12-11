@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:5%;
+        }
+        .head{
+            background-color:cadetblue;
+            color:bisque;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        .para{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: justify;
+        }
+        .btn{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 10px 10px 10px 10px;
+            background-color:thistle;
+            color:black;
+            width: 50%;
+            height:20%;
+        }
+        .flex{
+            display:flex;
+            flex-direction: row;
+        }
+        #str1{
+            display: none;
+        }
+        #math1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Javascript</h1>
+    </div>
+    <div class="para">
+        <p>JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via eval), object introspection (via for...in and Object utilities), and source-code recovery (JavaScript functions store their source text and can be retrieved through toString()).</p>
+        <p>JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
+    </div>
+    <div class="flex">
+        <button onclick="str()" id="str" class="btn">String</button>
+        <button onclick="math()" id="math" class="btn">Math</button>
+    </div>
+    <div id="str1">
+        <h2 class="head">String Module</h2>
+         <p>Strings are useful for holding data that can be represented in text form. Some of the most-used operations on strings are to check their length, to build and concatenate them using the + and += string operators, checking for the existence or location of substrings with the indexOf() method, or extracting substrings with the substring() method.</p>
+    </div>
+    <div id="math1">
+        <h2 class="head">Math Module</h2>
+        <p>Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with different data types like numbers, big numbers, complex numbers, fractions, units, and matrices. Powerful and easy to use.
+
+            Features
+            Supports numbers, big numbers, bigint, complex numbers, fractions, units, strings, arrays, and matrices.
+            Is compatible with JavaScript’s built-in Math library.
+            Contains a flexible expression parser.
+            Does symbolic computation.
+            Comes with a large set of built-in functions and constants.
+            Can be used as a command line application as well.
+            Runs on any JavaScript engine.
+            Is easily extensible.
+            Open source.</p>
+    </div>
+</body>
+<script>
+    function str(){
+        var str1=document.getElementById("str1");
+        str1.style.display="block";
+        math1.style.display="none";
+    }
+    function math(){
+        var math1=document.getElementById("math1");
+        math1.style.display="block";
+        str1.style.display="none";
+    }
+</script>
+</html>
