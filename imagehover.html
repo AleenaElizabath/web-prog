@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image hover</title>
+</head>
+<body>
+    <h1>Image hover</h1>
+    <img src="img.jpg" alt="Image1" id="img1" style="height: 50%;" width="50%" onmouseover="change()" onmouseout="back()">
+</body>
+<script>
+    var img1=document.getElementById("img1");
+    function change(){
+        img1.src="img1.jpg";
+    }
+    function back(){
+        img1.src="img.jpg";
+    }
+</script>
+</html>

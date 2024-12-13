@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="" method="post">
+            <h1 style="color:beige;">COLOUR CHANGER</h1>
+            <button type="button" onclick="change()">CHANGE COLOR</button>
+        </form>
+    </center>
+</body>
+<script>
+    function clrgen(){
+        const val="123456789ABCDEF";
+        var clr="#";
+        for(var i=0;i<6;i++){
+            clr+=val[Math.floor(Math.random() *16)];
+        }
+        return clr;
+    }
+    function change(){
+        document.body.style.backgroundColor=clrgen();
+    }
+</script>
+</html>
